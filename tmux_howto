@@ -1,0 +1,11 @@
+# set caps lock to duplicate ctrl button:
+sudo setxkbmap -v - option caps:ctrl_modifier
+
+# in .tmux.conf:
+#
+# bind a reload key
+bind R source-file ~/.tmux.conf \; display-message "Config relo    aded.."
+#Use vim keybindings in copy mode
+4 setw -g mode-keys vi
+# set prefix to C-a:
+set-option -g prefix C-a
